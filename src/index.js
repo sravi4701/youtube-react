@@ -1,9 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import SearchBar from './components/search_bar';
 
-let App = () => {
-	return (<h1>Welcome to the Youtube ReactApp</h1>);
+const API_KEY = "AIzaSyB9ES4SzaY7fyxyw5TzIXfD0Kbw73M2LcY";
+
+class App extends React.Component {
+	constructor(props){
+		super(props);
+	}
+
+	render() {
+		return (<SearchBar />);
+	}
 }
 
 
