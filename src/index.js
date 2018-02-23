@@ -17,15 +17,19 @@ class App extends React.Component {
 			videos: []
 		}
 
-		YTSearch({key: API_KEY, term: "motivation"}, (videos) => {
+		this.videoSearch("motivation");
+
+	}
+
+	videoSearch (term) {
+		YTSearch({key: API_KEY, term: term}, (videos) => {
 			this.setState({
 				videos: videos,
 				selectedVideo:videos[0] 
 			});
 		});
-
 	}
-
+	
 	render() {
 		return (
 			<div>
