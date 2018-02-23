@@ -9,7 +9,7 @@ let VideoListItem = function ({video, onVideoSelect}) {
 		<li className="list-group-item" onClick={()=>onVideoSelect(video)}>
 			<div className="video-list media">
 				<div className="media-left">
-					<img className="media-object" src={imageUrl}/>
+					<img className="media-object" src={imageUrl} alt={title}/>
 				</div>
 
 				<div className="media-body">
